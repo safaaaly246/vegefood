@@ -20,6 +20,16 @@
         <link rel="stylesheet" href="css/style.css">
      </head>
       <body class="goto-here">
+        
+ <!----------------------------------------------start PRE LOADER --------------------------------------->
+  <section class="preloader"> 
+    <div class="spinner">
+
+         <span class="spinner-rotate"></span>
+         
+    </div>
+</section> 
+  <!----------------------------------------------end PRE LOADER --------------------------------------->
               <!-- ---------------------------------------------------------- HEAD TITLE------------------------------ -->
 
              <section class="container-fluid ">
@@ -47,7 +57,7 @@
              
             </section> 
    <!-- ---------------------------------------------------------START NAV -------------------------------------- -->
-       <section class="container-fluid" >
+       <section class="container-fluid navContainer" >
              <nav class="mynav navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand offset-3" href="#">vegefoods</a>
    
@@ -68,10 +78,10 @@
                     </a>
                     <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="shop.html">Shop</a>
-                      <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-                      <a class="dropdown-item" href="product-single.html">Single Product</a>
+                      <a class="dropdown-item" href="">Wishlist</a>
+                      <a class="dropdown-item" href="">Single Product</a>
                       <a class="dropdown-item" href="cart.html">Cart</a>
-                      <a class="dropdown-item" href="checkout.html">Checkout</a>
+                      <a class="dropdown-item" href="">Checkout</a>
                     </div>
                   </li>
                    <li class="nav-item">
@@ -105,7 +115,7 @@
 
 
     <!------------------------------------------------------------------------- Form section  ------------------------------>
-    <section class="container-fluid about-us contact-us ">
+    <section class="container-fluid about-us contact-us wow fadeInUp"  data-wow-delay="0.2s" >
   
     <section class="container">
         <div class="row">
@@ -133,13 +143,11 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-12">
-                <div class="box-item-left">
-
+                
                 </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="box-item-left">
-                        <form>
+                <div class="col-lg-8 col-md-12 offset-2 wow fadeInUp"  data-wow-delay="0.2s">
+                    <div class="box-item-left ">
+                        <form class="offset-1">
                             <input type="text" placeholder="your name">
                             <input type="email" placeholder="your email">
                             <input type="text" placeholder=" subject">
@@ -195,7 +203,7 @@
         <i class="fa fa-phone"></i>
         <span class="text">+ 1235 2355 98</span>
         <br>
-        <i class="fa fa-paper-plane"></i>
+        <i class="fa fa-envelope"></i>
     
         <span class="text">youremail@email.com</span>
         <span class="text">3-5 Business days delivery &amp; Free Returns</span>
@@ -213,14 +221,13 @@
 
     </section> 
      
-            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.js"></script>
             <script src="js/popper.min.js"></script>
             <script src="js/bootstrap.min.js"></script> 
             <script src="js/owl.carousel.min.js"></script>
             <script src="js/jquery.animateNumber.min.js"></script>
             <script src="js/scrollax.min.js"></script>
             <script src="js/wow.min.js"></script>
-    
             <script src="js/main.js">
             </script>
           </body>

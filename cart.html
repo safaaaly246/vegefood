@@ -20,6 +20,16 @@
         <link rel="stylesheet" href="css/style.css">
      </head>
       <body class="goto-here">
+        
+ <!----------------------------------------------start PRE LOADER --------------------------------------->
+  <section class="preloader"> 
+    <div class="spinner">
+
+         <span class="spinner-rotate"></span>
+         
+    </div>
+</section> 
+  <!----------------------------------------------end PRE LOADER --------------------------------------->
               <!-- ---------------------------------------------------------- HEAD TITLE------------------------------ -->
 
              <section class="container-fluid ">
@@ -47,7 +57,7 @@
              
             </section> 
    <!-- ---------------------------------------------------------START NAV -------------------------------------- -->
-       <section class="container-fluid" >
+       <section class="container-fluid navContainer" >
              <nav class="mynav navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand offset-3" href="#">vegefoods</a>
    
@@ -68,14 +78,14 @@
                     </a>
                     <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="shop.html">Shop</a>
-                      <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-                      <a class="dropdown-item" href="product-single.html">Single Product</a>
+                      <a class="dropdown-item" href="">Wishlist</a>
+                      <a class="dropdown-item" href="">Single Product</a>
                       <a class="dropdown-item" href="cart.html">Cart</a>
-                      <a class="dropdown-item" href="checkout.html">Checkout</a>
+                      <a class="dropdown-item" href="">Checkout</a>
                     </div>
                   </li>
                    <li class="nav-item">
-                     <a class="nav-link" href="">
+                     <a class="nav-link" href="about.html">
                        about
                      </a>
                     
@@ -102,43 +112,89 @@
                    </div>
                </section>
                  <!-------------------------------------------------Start product section  ----------------------------------------------->
-                 <section class="container product-sec containe">
-                    <div class="product-sec-header">
-                       <div  class="product-sec-header-item1">
-                           <p>Product Details</p>
-                        </div>
-                        <div class="product-sec-header-item2">
-                            <p>Price</p>
-                            <p>Quantity</p>
-                            <p>Total Price</p>
-                         </div>
+           
+                <section class="container containe">
 
-                    </div>
-
-                    <div class="row text-center">
-                        <div>
-                            <img src="images/product-10.jpg" class="cover-sec-img">
-                            <p>Apple-pro</p>
-                        </div>
-                            <p class="cover-sec-price">10.00 EGY</p>
+                  <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">Product Details</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Total Price</th>
+      
+                          <th scope="col">control</th>
+      
+                        </tr>
+                      </thead>
+                      <tbody class="">
                       
-                            <div class="cover-sec-quntity">
-                                <button class="btn-increase">-</button>
-                                <p class="quntity">1</p>
-                                <button class="btn-decrease">+</button>
-                          
-                        </div>
-                            <div class="cover-sec-quntity">
-                                <p>80,00 <span> Egy</span> </p>
-                            </div>
-                    </div>
-                </section>
+                        <tr class="wow fadeInUp"  data-wow-delay="0.2s">
+                          <td scope="col" class="">                      
+                                <img src="images/product-10.jpg" class="cover-sec-img">
+                          </td>
+                          <td scope="col"><p class="price-cart">$10.00</p>  </td>
+                          <td scope="col">    
+                            <button class="btn-increase">+</button>                  
+                            <p class="quntity">1</p>
+                            <button class="btn-decrease">-</button>
+                         </td>
+                          <td scope="col"><p class="total-price">$70.00</p> </td>
+      
+                          <td scope="col">
 
+                            <button class="btn btn-danger">delete</button>
+
+                          </td>
+      
+                        </tr>
+                        <tr class="wow fadeInUp"  data-wow-delay="0.2s">
+                          <td scope="col">                      
+                                <img src="images/product-8.jpg" class="cover-sec-img">
+                          </td>
+                          <td scope="col"><p class="price-cart">$10.00</p>  </td>
+                          <td scope="col">    
+                            <button class="btn-increase">+</button>                  
+                            <p class="quntity">1</p>
+                            <button class="btn-decrease">-</button>
+                         </td>
+                          <td scope="col"><p class="total-price">$70.00</p> </td>
+      
+                          <td scope="col">
+
+                            <button class="btn btn-danger">delete</button>
+
+                          </td>
+      
+                        </tr>
+                        <tr class="wow fadeInUp"  data-wow-delay="0.2s">
+                          <td scope="col">                      
+                                <img src="images/product-4.jpg" class="cover-sec-img">
+                          </td>
+                          <td scope="col"><p class="price-cart">$10.00</p>  </td>
+                          <td scope="col">    
+                            <button class="btn-increase">+</button>                  
+                            <p class="quntity">1</p>
+                            <button class="btn-decrease">-</button>
+                         </td>
+                          <td scope="col"><p class="total-price">$70.00</p> </td>
+      
+                          <td scope="col">
+
+                            <button class="btn btn-danger">delete</button>
+
+                          </td>
+      
+                        </tr>
+                      </tbody>
+                      
+                    </table>
+                  </section>
 
                 <!------------------------------------------------------------------------- subscribe section  ------------------------------>
 <section class="container-fluid containe subscribe wow fadeInUp"  data-wow-delay="0.2s">
     <div class="row text-center">
-      <div class="offset-2 col-lg-4 col-md-8">
+      <div class="offset-2 col-lg-4 col-md-8 caption-subscribe">
           <h4>Subcribe to our Newsletter</h4>
           <p>Get e-mail updates about our latest shops and special offers</p>
       </div>
@@ -194,7 +250,7 @@
         <i class="fa fa-phone"></i>
         <span class="text">+ 1235 2355 98</span>
         <br>
-        <i class="fa fa-paper-plane"></i>
+        <i class="fa fa-envelope"></i>
     
         <span class="text">youremail@email.com</span>
         <span class="text">3-5 Business days delivery &amp; Free Returns</span>
@@ -210,7 +266,7 @@
     </div>
     </section> 
      
-            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery.js"></script>
             <script src="js/popper.min.js"></script>
             <script src="js/bootstrap.min.js"></script> 
             <script src="js/owl.carousel.min.js"></script>
