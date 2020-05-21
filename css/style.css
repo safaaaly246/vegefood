@@ -1149,9 +1149,8 @@ input[type="radio"], input[type="checkbox"]{
        
 
     }
-    .checkout-sec input,.checkout-sec select{
-        width: 308px;
-
+    .contact-us-userinfo input,.contact-us-userinfo textarea{
+        width: 280px;
     }
 
 }
