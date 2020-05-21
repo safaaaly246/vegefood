@@ -1096,8 +1096,9 @@ input::placeholder{
     .checkout-content-price{
         width: 400px;
     }
-    .contact-us-userinfo input,.contact-us-userinfo textarea{
-        width: 400px;
+    .checkout-sec input,.checkout-sec select{
+        width: 450px;
+
     }
   
 }
@@ -1113,10 +1114,7 @@ input::placeholder{
        
         padding: 4px 16px;
     }
-    .checkout-sec input,.checkout-sec select{
-        width: 408px;
-
-    }
+   
     input[type="radio"], input[type="checkbox"]{
         width: unset;
         height: unset;
@@ -1154,10 +1152,10 @@ input::placeholder{
     }
 
    
-    .checkout-sec input, .checkout-sec select{
+    .checkout-sec input,.checkout-sec select{
         width: 290px;
-    }
 
+    }
 }
 
 
