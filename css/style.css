@@ -1091,7 +1091,7 @@ input[type="radio"], input[type="checkbox"]{
     }
    
     .offset-3 {
-        margin-left: 0%;
+        margin-left: 0px;
     }
     .checkout-content-price{
         width: 400px;
@@ -1149,8 +1149,8 @@ input[type="radio"], input[type="checkbox"]{
        
 
     }
-    .contact-us-userinfo input,.contact-us-userinfo textarea{
-        width: 280px;
+    .offset-3{
+        margin-left: 0;
     }
 
     
