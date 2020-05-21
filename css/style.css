@@ -45,7 +45,18 @@
 
 
 /*---------------------------------------*/
-
+.overlay-img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		opacity: .4;
+		width: 50%;
+        background: #82ae46;
+        width: 100%;
+	}
 p,a,button{
     cursor: pointer;
 }
@@ -92,6 +103,9 @@ text-transform: capitalize;
 a{
     text-decoration: none;
     
+}
+a:hover{
+    text-decoration: none;
 }
 .top-about:hover{
 color: #fff;
@@ -406,14 +420,16 @@ h1{
     padding-top: 200px;
  background-attachment: fixed;
 }
+
+
 .clock h2{
-color: #a0d654;
+color: #333;
 font-size: 22px;
 }
 
 .clock h4{
     text-transform: capitalize;
-    color: #fff;
+    color: #82ae46;
 }
 .clock{
     display: flex;
@@ -582,11 +598,18 @@ margin-bottom: 50px;
     background-image: url(../images/bg_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px;
-    color: lightyellow;
+    padding: 150px;
+    color: darkviolet;
+    text-align: center;
 }
 
+.cover-sec h2  {
+    text-transform: uppercase;
 
+}
+.cover-sec p{
+    font-size: 20px;
+}
 .cover-sec-img{
     display: inline-block;
     width: 223px;
@@ -820,6 +843,9 @@ top:-80px    }
         color: #fff;
         
     }
+    .total-content{
+        margin-left: 14px;
+    }
     
 }
 .fa-heart{
@@ -827,4 +853,236 @@ top:-80px    }
 }
 .card-title,.price{
     font-weight: normal;
+}
+
+.total-content{
+    border: 1px solid lightgray;
+    padding: 20px 80px;
+    text-transform: capitalize;
+}
+.total-price-checkout-cart{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    border-bottom: 1px solid lightgray;
+}
+.total-price-number{
+    color: #82ae46;
+}
+a h4{
+    color: #171717;
+}
+
+/***************************** blog begain ***********************************/
+.blog-text {
+	color: #82ae46;
+text-transform: uppercase;
+font-weight: bold;
+}
+.blog-text span{
+	color:gray;
+	text-transform: capitalize;
+font-weight: normal;
+}
+
+.blog-sidebar .search-form {
+	margin-bottom: 55px;
+}
+
+.blog-sidebar .search-form h4 {
+	color: #252525;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.blog-sidebar .search-form form {
+	position: relative;
+}
+
+.blog-sidebar .search-form form input {
+	height: 46px;
+	width: 100%;
+	border: 2px solid #ECECEC;
+	padding-left: 20px;
+	font-size: 18px;
+	color: #b2b2b2;
+}
+
+.blog-sidebar .search-form form button {
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #ffffff;
+	background: #252525;
+	border: 1px solid #252525;
+	height: 46px;
+	padding: 0 15px;
+	cursor: pointer;
+}
+
+.blog-sidebar .blog-catagory {
+	margin-bottom: 41px;
+}
+
+.blog-sidebar .blog-catagory h4 {
+	color: #252525;
+	font-weight: 700;
+	margin-bottom: 14px;
+}
+
+.blog-sidebar .blog-catagory ul li {
+	list-style: none;
+}
+
+.blog-sidebar .blog-catagory ul li a {
+	font-size: 16px;
+	color: #636363;
+	line-height: 39px;
+}
+
+.blog-sidebar .recent-post {
+	margin-bottom: 55px;
+}
+
+.blog-sidebar .recent-post h4 {
+	color: #252525;
+	font-weight: 700;
+	margin-bottom: 28px;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item {
+	overflow: hidden;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item .rb-pic {
+	float: left;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item .rb-pic img {
+	height: 80px;
+	width: 80px;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item .rb-text {
+	display: table;
+	padding-left: 16px;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item .rb-text h6 {
+	color: #252525;
+	line-height: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item .rb-text p {
+	margin-bottom: 0;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #82ae46;
+	letter-spacing: 2px;
+	line-height: 20px;
+}
+
+.blog-sidebar .recent-post .recent-blog .rb-item .rb-text p span {
+	color: #b2b2b2;
+	font-weight: 400;
+	text-transform: capitalize;
+	letter-spacing: 0;
+}
+
+.blog-sidebar .blog-tags h4 {
+	color: #252525;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.blog-sidebar .blog-tags .tag-item a {
+	display: inline-block;
+	font-size: 16px;
+	color: #636363;
+	padding: 5px 15px;
+	border: 1px solid #ebebeb;
+	margin-right: 5px;
+	margin-bottom: 9px;
+	border-radius: 2px;
+}
+
+.blog-sec-item img {
+    width: 320px ;
+    height: 320px;
+}
+
+/* ***************************************checkout screan *********************************/
+
+
+
+label{
+    display: block;
+}
+
+input{
+    width: 340px;
+    padding: 10px;
+    height: 50px;
+}
+select{
+    width: 730px;
+    padding: 10px;
+    height: 50px;
+    color: gray;
+    text-transform: capitalize;
+}
+.user-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input::placeholder{
+    color: gray;
+}
+input[type="radio"], input[type="checkbox"]{
+    width: unset;
+    height: unset;
+    margin: 5px;
+}
+.radio{
+    justify-content: space-evenly;
+}
+
+
+.checkout-content-price{
+    width: 600px;
+    border: 1px solid lightgray;
+    color: gray;
+    margin-top: 75px;
+
+}
+.checkout-content-price .btn-primary{
+    margin: 20px 60px;
+    padding: 16px 40px;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .user-info{
+        display: block;
+    }
+    input{
+        width: 455px;
+    }
+    select{
+        width: 455px;
+    }
+    .checkout-content-price{
+        width: 400px;
+    }
+    .cover-sec p,.cover-sec h2{
+        position: relative;
+    right: 160px;
+    }
 }
