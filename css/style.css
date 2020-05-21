@@ -162,9 +162,7 @@ color: #fff;
     color: #82ae46;
 }
 
-.dropdown-menu{
-margin-left: -100px;
-}
+
 @media only screen and (max-width: 1200px){
     .bg-light {
         background-color: black !important;
@@ -523,16 +521,13 @@ font-size: 22px;
     color: #fff;
 }
  @media only screen and (max-width: 1200px){
-    .top{
-   
-        top: 220px;
-       
-    }
+    
     .caption-subscribe{
         margin-left: 10px;
     }
+  
     .offset-5{
-        margin-left: 100px;
+        margin-left: 0px;
     }
  }
 
@@ -733,17 +728,17 @@ margin-bottom: 50px;
     /*-------------------------------- About us TEMPLATE --------------------------------------------*/
     .about-us-panner {
        
-        background-image: url("../images/bg_2.jpg");
+        background-image: url("../images/bg_3.jpg");
         padding-bottom: 59px;
         padding-top: 97px;
         margin-bottom: 100px;
-        color: #fff;
+        color: #82ae46;
     }
 .about-us{
     background-color: #f7f6f2 !important;
 }
     .content-about-us-vedio img{
-          width: 500px;
+          width: 100%;
         height: 600px;
         margin-top: 100px;
         position: relative;
@@ -757,25 +752,12 @@ margin-bottom: 50px;
         padding: 50px;
         position: relative;
     }
-.video-demo{
-    width: 600px;
-    height: 600px;
-}
-    .top-about {
-        display: inline-block;
-        background-color: #82ae46;
-       
-        border-radius: 50%;
-        position: absolute;
-        top: 358px;
-        left: 50%;
-        color: #fff;
-        padding: 20px 26px;
-    }
+
+  
     @media only screen and (max-width: 1200px){
 
     .content-about-us-vedio img {
-        width: 400px;
+        width: 100%;
         height: 445px;
     }
     .list-product ul li{
@@ -1102,7 +1084,7 @@ input[type="radio"], input[type="checkbox"]{
   
 }
 
-@media only screen and (max-width: 499px){
+@media only screen and (max-width: 599px){
     .slider h1, .slider h2{
         font-size: 20px;
     }
@@ -1122,6 +1104,21 @@ input[type="radio"], input[type="checkbox"]{
         height: unset;
         margin: 5px;
     }
-    
+    .subscribe input{
+        width: 220px;
+    }
+    .content-about-us-vedio img {
+        width: 100%;
+        height: 445px;
+    }
+    .list-product ul li{
+        margin-left: 0px;
+    }
+    .checkout-offset .offset-1{
+        margin-left: 0px;
+    }
+    .navbar-collapse .navbar-nav{
+        margin-left: 0;
+    }
 
 }
