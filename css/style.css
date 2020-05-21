@@ -1153,13 +1153,10 @@ input::placeholder{
         margin-left: 0;
     }
 
-   .user-info input,.user-info select{
-        width: 285px;
-    }
-    select{
-        width: 285px;
-    }
    
+    .checkout-sec input, .checkout-sec select{
+        width: 290px;
+    }
 
 }
 
