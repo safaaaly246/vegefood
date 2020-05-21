@@ -1056,12 +1056,12 @@ select{
 input::placeholder{
     color: gray;
 }
-input[type="radio"], input[type="checkbox"]{
+.user-info input[type="radio"], input[type="checkbox"]{
     width: unset;
     height: unset;
     margin: 5px;
 }
-.radio{
+.user-info .radio{
     justify-content: space-evenly;
 }
 
@@ -1102,7 +1102,7 @@ input[type="radio"], input[type="checkbox"]{
   
 }
 
-@media only screen and (max-width: 499px){
+@media only screen and (max-width: 599px){
     .slider h1, .slider h2{
         font-size: 20px;
     }
@@ -1153,8 +1153,17 @@ input[type="radio"], input[type="checkbox"]{
         margin-left: 0;
     }
 
-    
+   .user-info input,.user-info select{
+        width: 285px;
+    }
+    select{
+        width: 285px;
+    }
+   
 
 }
 
 
+option{
+    text-transform: capitalize;
+}
