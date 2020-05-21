@@ -69,6 +69,20 @@ p,a,button{
     font-size: 30px;
 
 }
+.cover-sec{
+    background-image: url("../images/bg_1.jpg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.cover-sec-inner{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
 body{
     text-transform: capitalize;
 }
@@ -491,21 +505,16 @@ font-size: 22px;
      padding-bottom: 50px;
      position: relative;
  }
- .top{
-     display: inline-block;
-     background-color: #82ae46;
-     padding: 20px 26px;
-     border-radius: 50%;
-     position: absolute;
-     top: 150px;
-     left:50%;
-     color: #fff;
 
- }
- 
- .top:hover{
-     color: #fff;
- }
+ #arrow{
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    color: #fff;
+    background:forestgreen;
+    padding: 21px 27px;
+}
 .form-control{
     width: 85%;
 }
@@ -529,7 +538,7 @@ font-size: 22px;
 
  .footer{
      padding-top: 50px;
-     padding-bottom: 50px;
+     padding-bottom: 10px;
  }
  .footer p{
      color: #333;
@@ -542,7 +551,7 @@ font-size: 22px;
     .footer .row{
    
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
        
     }
     .customer-person{
@@ -593,102 +602,111 @@ margin-bottom: 50px;
 
 
 /*-------------------------------- CART TEMPLATE --------------------------------------------*/
-/* cover section  */
-.cover-sec{
-    background-image: url(../images/bg_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 150px;
-    color: darkviolet;
-    text-align: center;
-}
 
-.cover-sec h2  {
-    text-transform: uppercase;
-
-}
-.cover-sec p{
-    font-size: 20px;
-}
-.cover-sec-img{
-    display: inline-block;
-    width: 223px;
-    height: 238px;
-    margin-left: -58px; 
-}
-
-.cover-sec-price{
-    margin-left: 120px;
-    margin-top: 121px;
-}
 .btn-increase,.btn-decrease{
-padding: 6px 12px;
-background-color: #82ae46;
-border: 1px solid #82ae46;
-color: #fff;
-}
-.quntity{
-    border: 1px solid lightgray;
-    display: inline-block;
-    padding: 6px 32px;
-    margin-top: 100px;
-}
-.cover-sec-quntity{
-    margin-left: 90px;
-    margin-top: 121px;
-}
-.product-sec p{
-    font-weight: bold;
-    margin-top: 100px;
-}
-.product-sec span{
-    color: #82ae46;
-}
-.table .thead-dark th{
+    padding: 6px 12px;
     background-color: #82ae46;
-    border-color: #82ae46;
-}
-.total-price,.price-cart,.btn-danger{
-    margin-top: 100px;
-    text-transform: capitalize;
-}
-
-@media only screen and (max-width: 1200px){
-    .cover-sec-img{
-    width: 140px;
-    height: 140px;
-    margin-left: -30px;    }
-   
-    .cover-sec-quntity{
-        margin-left: 12px;
-        margin-top: 121px;
-    }
-    .total-price,.price-cart,.btn-danger{
-        margin-top: 80px;
+    border: 1px solid #82ae46;
+    color: #fff;
     }
     .quntity{
-        padding: 6px 25px;
-        margin-top: 40px;
-
+        border: 1px solid lightgray;
+        display: inline-block;
+        padding: 6px 32px;
+        margin-top: 100px;
     }
-    .btn-increase,.btn-decrease{
-
-        padding: 6px 24px;
-        position: relative;
-
-        }
+    .cover-sec-quntity{
+        margin-left: 90px;
+        margin-top: 121px;
+    }
+    .product-sec p{
+        font-weight: bold;
+        margin-top: 100px;
+    }
+    .product-sec span{
+        color: #82ae46;
+    }
+    .table .thead-dark th{
+        background-color: #505962;
+        border-color: #505962;
+    }
+    .total-price,.price-cart,.btn-danger{
+        margin-top: 100px;
+        text-transform: capitalize;
+    }
+   
+    .cover-sec-img{
+        width: 180px;
+        height: 180px;
+       }
+    @media only screen and (max-width: 1200px){
+        .cover-sec-img{
+        width: 120px;
+        height: 120px;
+       }
        
-        .btn-increase {
-            top: 40px;
+       
+        .total-price,.price-cart,.ti-close{
+            display: inline-block;
+            margin-top: 80px;
         }
-        .btn-decrease{
-            padding: 6px 26px;
-
-            top:-16px
+        /* .total-price{
+            margin-left: -40px;
+        } */
+        .quntity{
+            padding: 6px 16px;
+            margin-top: 40px;
+    
         }
-        
+        .btn-increase,.btn-decrease{
+    
+            padding: 6px 15px;
+            position: relative;
+    
+            }
+           
+            .btn-increase {
+                top: 40px;
+            }
+            .btn-decrease{
+                padding: 6px 17px;
+    
+                top:-16px
+            }
+            
+        }
+        .table td, .table th{
+            vertical-align: middle;
+        }
+    
+        @media only screen and (max-width: 767px){
+         .cart-table {
+        overflow: auto;
     }
-
+    .total-content{
+        margin-left: 14px;
+    }
+        }
+    
+    
+    
+        .total-content{
+            border: 1px solid lightgray;
+            padding: 20px 80px;
+            text-transform: capitalize;
+        }
+        .total-price-checkout-cart{
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            border-bottom: 1px solid lightgray;
+        }
+        .total-price-number{
+            color: #82ae46;
+        }
+        a h4{
+            color: #171717;
+        }
 /*-------------------------------- product TEMPLATE --------------------------------------------*/
 
 
@@ -1081,8 +1099,29 @@ input[type="radio"], input[type="checkbox"]{
     .checkout-content-price{
         width: 400px;
     }
-    .cover-sec p,.cover-sec h2{
-        position: relative;
-    right: 160px;
+  
+}
+
+@media only screen and (max-width: 499px){
+    .slider h1, .slider h2{
+        font-size: 20px;
     }
+    .offset-3 {
+        margin-left: 0;
+    }
+    .list-product .activeLi{
+       
+        padding: 4px 16px;
+    }
+    .checkout-sec input,.checkout-sec select{
+        width: 300px;
+
+    }
+    input[type="radio"], input[type="checkbox"]{
+        width: unset;
+        height: unset;
+        margin: 5px;
+    }
+    
+
 }
