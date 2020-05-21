@@ -595,8 +595,19 @@ margin-bottom: 50px;
 }
 }
 
+/************************************** contact us ********************************* */
+.contact-us-userinfo input,.contact-us-userinfo textarea{
+    width: 500px;
+    padding: 10px;
+}
+
+.contact-us-userinfo textarea{
+    height: 150px;
+}
 
 /*-------------------------------- CART TEMPLATE --------------------------------------------*/
+
+
 
 .btn-increase,.btn-decrease{
     padding: 6px 12px;
@@ -829,7 +840,7 @@ top:-80px    }
         margin: 0;
     }
     .box-item-left input {
-        width: 160%;
+        width: 300px;
         margin-left: -60px;
 
     }
@@ -1078,13 +1089,20 @@ input[type="radio"], input[type="checkbox"]{
     select{
         width: 455px;
     }
+   
+    .offset-3 {
+        margin-left: 0%;
+    }
     .checkout-content-price{
+        width: 400px;
+    }
+    .contact-us-userinfo input,.contact-us-userinfo textarea{
         width: 400px;
     }
   
 }
 
-@media only screen and (max-width: 599px){
+@media only screen and (max-width: 499px){
     .slider h1, .slider h2{
         font-size: 20px;
     }
@@ -1096,7 +1114,7 @@ input[type="radio"], input[type="checkbox"]{
         padding: 4px 16px;
     }
     .checkout-sec input,.checkout-sec select{
-        width: 300px;
+        width: 408px;
 
     }
     input[type="radio"], input[type="checkbox"]{
@@ -1112,7 +1130,7 @@ input[type="radio"], input[type="checkbox"]{
         height: 445px;
     }
     .list-product ul li{
-        margin-left: 0px;
+        margin-left: 10px;
     }
     .checkout-offset .offset-1{
         margin-left: 0px;
@@ -1120,5 +1138,22 @@ input[type="radio"], input[type="checkbox"]{
     .navbar-collapse .navbar-nav{
         margin-left: 0;
     }
+    .checkout-content-price{
+        width: 300px;
+       
+    
+    }
+    .box-item-left input {
+      
+        width: 100%;
+       
+
+    }
+    .checkout-sec input,.checkout-sec select{
+        width: 308px;
+
+    }
 
 }
+
+
