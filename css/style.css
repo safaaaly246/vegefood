@@ -1,4 +1,6 @@
-
+.form-control {
+    width: 100%;
+}
 
 /*---------------------------------------
        PRE LOADER              
@@ -41,8 +43,12 @@
     to {transform: rotate(360deg);}
   }
 
- 
-
+  .btn-primary:hover{
+      color: #82ae46;
+  }
+.view-details:hover{
+color: #fff;
+}
 
 /*---------------------------------------*/
 .overlay-img{
@@ -80,8 +86,11 @@ p,a,button{
     top: 30%;
     left: 40%;
     color: #fff;
-    text-transform: uppercase;
     font-size: 20px;
+}
+.cover-sec-inner p,.cover-sec-inner h2{
+    text-transform: uppercase;
+
 }
 body{
     text-transform: capitalize;
@@ -211,7 +220,6 @@ color: #fff;
 .btn-primary:hover{
     background-color: unset;
     border: 1px solid #82ae46;
-    color: #82ae46;
 
 }
 h1{
@@ -510,7 +518,7 @@ font-size: 22px;
     bottom: 0;
     right: 10px;
     color: #fff;
-    background:forestgreen;
+    background:#82ae46;
     padding: 21px 27px;
 }
 .form-control{
@@ -1100,12 +1108,39 @@ input::placeholder{
         width: 450px;
 
     }
+    .checkout-content-price-part1{
+      display: none;
+    }
+    .user-info input[type="radio"], input[type="checkbox"]{
+        width: unset;
+        height: unset;
+        margin: 5px;
+    }
+    .form-control {
+        width: 100%;
+    }
   
+}
+@media only screen and (max-width: 1200px){
+.checkout-sec input, .checkout-sec select{
+    width: unset;
+    margin-top: -12px;
+    margin-right: 10px;
+}
+input[type="checkbox"]{
+    margin-top: 10px;
+
+}
 }
 
 @media only screen and (max-width: 499px){
     .slider h1, .slider h2{
-        font-size: 20px;
+        font-size: 16px;
+    }
+  
+    .slider h1 .mt-4{
+        margin-top: 0.5rem!important;
+
     }
     .offset-3 {
         margin-left: 0;
@@ -1127,6 +1162,9 @@ input::placeholder{
         width: 100%;
         height: 445px;
     }
+    .list-product ul{
+        margin-left: 10%;
+    }
     .list-product ul li{
         margin-left: 10px;
     }
@@ -1134,7 +1172,7 @@ input::placeholder{
         margin-left: 0px;
     }
     .navbar-collapse .navbar-nav{
-        margin-left: 0;
+        margin-left: 20%;
     }
     .checkout-content-price{
         width: 300px;
@@ -1156,9 +1194,57 @@ input::placeholder{
         width: 290px;
 
     }
+    #arrow{
+       
+        padding: 13px 15px;
+    }
+    .cover-sec-inner{
+        top: 40%;
+        left: 10%;
+        
+    }
+    .searchBtn {
+        padding: 11px 16px;
+        top: -1px;       
+    }
+   
+    .modal-body img {
+        width: 260px;
+        height: 260px;
+        margin-left: 10px;
+    }
+    .partners {
+        display: none;
+    }
+    .checkout-content-price-part1{
+        display: none;
+      }
+      .checkout-sec input, .checkout-sec select{
+        width: unset;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    input[type="checkbox"]{
+        margin-top: 10px;
+    
+    }
+    .form-control {
+        width: 100%;
+    }
 }
 
 
 option{
     text-transform: capitalize;
+}
+.shop-now-cotact-us{
+    background-color: #82ae46;
+    color: #f7f6f2;
+    border-color: #82ae46;
+    text-transform: capitalize;
+}
+.shop-now-cotact-us:hover{
+    background-color: #fff;
+    color: #82ae46;
+    border-color: #fff;
 }
