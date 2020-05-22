@@ -1248,3 +1248,11 @@ option{
     color: #82ae46;
     border-color: #fff;
 }
+
+@media only screen and (min-width: 1000px)and(max-width: 1000px){
+
+
+.shop-now-cotact-us{
+    width: 57%;
+}
+}
