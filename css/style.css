@@ -5,6 +5,9 @@
 /*---------------------------------------
        PRE LOADER              
   -----------------------------------------*/
+  ul{
+      list-style: none;
+  }
   html{
     scroll-behavior: smooth;
 }
@@ -571,19 +574,18 @@ font-size: 22px;
 color: #fff;
 background-color: #82ae46;
 }
- .email{
-    width: 335px;
-    height: 48px;
-    padding: 6px;
- }
+
  .searchBtn{
-     background-color: #82ae46;
-     padding: 12px 20px;
-     border: 1px solid #82ae46;
-     color: #fff;
-     text-transform: capitalize;
-     position: relative;
-     right: 5px;
+    background-color: #82ae46;
+    padding: 10px 9px;
+    line-height: 2;
+    border: 1px solid #82ae46;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+    right: 5px;
+    top: 1px;
  }
 .content-person{
     display: flex;
@@ -618,7 +620,7 @@ margin-bottom: 50px;
 
 
 .btn-increase,.btn-decrease{
-    padding: 6px 12px;
+    padding: 1px 12px;
     background-color: #82ae46;
     border: 1px solid #82ae46;
     color: #fff;
@@ -1043,17 +1045,13 @@ label{
     display: block;
 }
 
-input{
-    width: 340px;
-    padding: 10px;
-    height: 50px;
-}
+
 select{
-    width: 730px;
+    /* width: 730px;
     padding: 10px;
     height: 50px;
     color: gray;
-    text-transform: capitalize;
+    text-transform: capitalize; */
 }
 .user-info{
     display: flex;
@@ -1065,9 +1063,8 @@ input::placeholder{
     color: gray;
 }
 .user-info input[type="radio"], input[type="checkbox"]{
-    width: unset;
-    height: unset;
     margin: 5px;
+    width: 10px;
 }
 .user-info .radio{
     justify-content: space-evenly;
@@ -1075,15 +1072,23 @@ input::placeholder{
 
 
 .checkout-content-price{
-    width: 600px;
-    border: 1px solid lightgray;
+    width: 100%;
+    border: 1px solid #ebebeb;
     color: gray;
     margin-top: 75px;
 
 }
+
+.checkout-content-price ul li{
+    margin: 10px;
+    padding: 10px;
+}
+.checkout-content-price ul li input[type="radio"]{
+margin-right: 10px;
+}
 .checkout-content-price .btn-primary{
     margin: 20px 60px;
-    padding: 16px 40px;
+    padding: 8px 20px;
 }
 
 
@@ -1091,29 +1096,16 @@ input::placeholder{
     .user-info{
         display: block;
     }
-    input{
-        width: 455px;
-    }
-    select{
-        width: 455px;
-    }
-   
+  
     .offset-3 {
         margin-left: 0px;
     }
-    .checkout-content-price{
-        width: 400px;
-    }
-    .checkout-sec input,.checkout-sec select{
-        width: 450px;
-
-    }
+   
     .checkout-content-price-part1{
       display: none;
     }
     .user-info input[type="radio"], input[type="checkbox"]{
-        width: unset;
-        height: unset;
+     
         margin: 5px;
     }
     .form-control {
@@ -1123,7 +1115,6 @@ input::placeholder{
 }
 @media only screen and (max-width: 1200px){
 .checkout-sec input, .checkout-sec select{
-    width: unset;
     margin-top: -12px;
     margin-right: 10px;
 }
@@ -1151,13 +1142,10 @@ input[type="checkbox"]{
     }
    
     input[type="radio"], input[type="checkbox"]{
-        width: unset;
-        height: unset;
+       
         margin: 5px;
     }
-    .subscribe input{
-        width: 220px;
-    }
+    
     .content-about-us-vedio img {
         width: 100%;
         height: 445px;
@@ -1175,25 +1163,17 @@ input[type="checkbox"]{
         margin-left: 20%;
     }
     .checkout-content-price{
-        width: 300px;
-       
-    
+        width: 100px;
     }
     .box-item-left input {
       
-        width: 100%;
-       
-
+        width: 30%;
     }
     .offset-3{
         margin-left: 0;
     }
 
-   
-    .checkout-sec input,.checkout-sec select{
-        width: 290px;
-
-    }
+ 
     #arrow{
        
         padding: 13px 15px;
@@ -1220,7 +1200,6 @@ input[type="checkbox"]{
         display: none;
       }
       .checkout-sec input, .checkout-sec select{
-        width: unset;
         margin-bottom: 5px;
         margin-right: 10px;
     }
@@ -1256,3 +1235,15 @@ option{
     width: 57%;
 }
 }
+
+@media only screen and (max-width: 1200px){
+    input{
+        width: 100%;
+    }
+    .checkout-content-price{
+        width: 100%;
+    }
+    .searchBtn{
+        border-radius: 5px;
+    }
+    }
